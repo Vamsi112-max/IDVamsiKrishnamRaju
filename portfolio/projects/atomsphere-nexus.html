@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AtomSphere Nexus — Vamsi Inampudi</title>
+<meta name="description" content="A multi-role SaaS platform for goal tracking, KPI evaluation, and performance reviews, with role-based dashboards, real-time sync, and automated reporting.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="../index.html" class="brand"><span class="pulse"></span>IV_DVKR</a>
+    <nav class="navlinks">
+      <a href="../index.html#about">about</a>
+      <a href="../index.html#experience">experience</a>
+      <a href="../index.html#projects">projects</a>
+      <a href="../index.html#skills">skills</a>
+      <a href="../index.html#contact">contact</a>
+    </nav>
+    <a class="nav-cta" href="mailto:vamsiinampudi01@gmail.com">Get in touch</a>
+    <button class="nav-toggle" aria-label="Toggle menu">menu</button>
+  </div>
+</header>
+
+<main>
+  <section class="pd-hero">
+    <div class="wrap">
+      <a href="../index.html#projects" class="pd-back reveal">← Back to all projects</a>
+
+      <div class="pd-status-row reveal">
+        <span class="proj-status live"><span class="led"></span>Live</span>
+        <span class="mono" style="font-size:12.5px;color:var(--muted)">Solo build · Personal project</span>
+      </div>
+
+      <h1 class="reveal">AtomSphere Nexus — Goal Intelligence &amp; Performance Tracking SaaS</h1>
+      <p class="tagline reveal">
+        A multi-role SaaS platform that streamlines employee performance management, goal tracking,
+        project monitoring, KPI evaluation, and review cycles through one centralized system —
+        with a different dashboard for every role that touches it.
+      </p>
+
+      <div class="pd-meta-row reveal">
+        <div class="m"><div class="k">Role</div><div class="v">Solo designer &amp; builder</div></div>
+        <div class="m"><div class="k">User roles</div><div class="v">Employee · Manager · Admin</div></div>
+        <div class="m"><div class="k">Data layer</div><div class="v">Supabase + SQL, real-time</div></div>
+        <div class="m"><div class="k">Reporting</div><div class="v">Automated PDF / Excel export</div></div>
+      </div>
+
+      <div class="pd-actions reveal">
+        <a class="btn btn-primary" href="https://atom-sphere-nexus.vercel.app" target="_blank" rel="noopener">Open live demo ↗</a>
+        <a class="btn btn-ghost" href="https://github.com/Vamsi112-max/AtomSphere-Nexus" target="_blank" rel="noopener">View source ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="pd-body">
+      <div class="pd-main">
+
+        <section class="reveal">
+          <h2><span class="num">01</span> Overview</h2>
+          <p>
+            Performance management inside most companies lives across scattered spreadsheets, one-off review
+            documents, and disconnected chat threads — which makes it hard for a manager to see a team's real
+            progress, and harder still for leadership to roll that up into anything reliable. AtomSphere Nexus
+            replaces that patchwork with a single SaaS platform where goals, KPIs, and review cycles all live
+            in one place, visible to the right people at the right level of detail.
+          </p>
+        </section>
+
+        <section class="reveal">
+          <h2><span class="num">02</span> The problem</h2>
+          <p>
+            Three different people need three different views of the same underlying data: an employee needs
+            to see and update their own goals; a manager needs a team-wide view to run reviews and evaluate
+            KPIs fairly; an admin needs organization-wide visibility and reporting. Building that as one
+            undifferentiated dashboard either overwhelms employees with controls they don't need, or strips
+            managers of the oversight they do. AtomSphere Nexus was built to give each role exactly what it
+            needs — no more, no less — without duplicating the underlying data model three times.
+          </p>
+        </section>
+
+        <section class="reveal">
+          <h2><span class="num">03</span> Architecture</h2>
+          <div class="arch-list">
+            <div class="arch-item">
+              <span class="n">01</span>
+              <div>
+                <div class="t">Role-based dashboards</div>
+                <div class="d">Separate, purpose-built views for Employees, Managers, and Admins, built on a shared data model and gated by role-based access control.</div>
+              </div>
+            </div>
+            <div class="arch-item">
+              <span class="n">02</span>
+              <div>
+                <div class="t">Goal &amp; KPI engine</div>
+                <div class="d">Structured goal tracking and KPI evaluation that feeds directly into scheduled review cycles instead of living in a separate document.</div>
+              </div>
+            </div>
+            <div class="arch-item">
+              <span class="n">03</span>
+              <div>
+                <div class="t">Real-time sync</div>
+                <div class="d">Built on Supabase, so a goal update or review comment reflects across every relevant dashboard immediately, not after a page refresh.</div>
+              </div>
+            </div>
+            <div class="arch-item">
+              <span class="n">04</span>
+              <div>
+                <div class="t">Automated reporting</div>
+                <div class="d">One-click generation of PDF and Excel reports for review cycles and organizational analytics, removing manual report assembly.</div>
+              </div>
+            </div>
+          </div>
+
+          <p style="margin-top:20px;">
+            The front end is built in <strong>React.js</strong>, with <strong>Supabase</strong> handling
+            authentication, real-time data sync, and storage on top of a relational <strong>SQL</strong>
+            schema, and a <strong>REST API</strong> layer connecting the dashboards to that data.
+          </p>
+        </section>
+
+        <section class="reveal">
+          <h2><span class="num">04</span> What it handles</h2>
+          <ul>
+            <li>Employee goal tracking with manager visibility</li>
+            <li>KPI evaluation tied directly to review cycles</li>
+            <li>Project monitoring across teams</li>
+            <li>Role-based dashboards for Employees, Managers, and Admins</li>
+            <li>Real-time synchronization across every connected dashboard</li>
+            <li>Automated PDF / Excel report generation for reviews and analytics</li>
+            <li>Secure, role-gated data access throughout</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <aside class="pd-sidebar">
+        <div class="sb-card reveal">
+          <h4>Stack</h4>
+          <div class="sb-tags">
+            <span>React.js</span><span>Supabase</span><span>SQL</span><span>REST API</span>
+          </div>
+        </div>
+        <div class="sb-card reveal">
+          <h4>Links</h4>
+          <div class="sb-links">
+            <a href="https://atom-sphere-nexus.vercel.app" target="_blank" rel="noopener">Live demo <span>↗</span></a>
+            <a href="https://github.com/Vamsi112-max/AtomSphere-Nexus" target="_blank" rel="noopener">Source code <span>↗</span></a>
+          </div>
+        </div>
+        <div class="sb-card reveal">
+          <h4>At a glance</h4>
+          <div class="outcome-grid" style="grid-template-columns:1fr;">
+            <div class="outcome-card"><div class="v">3</div><div class="l">Role-based dashboards</div></div>
+            <div class="outcome-card"><div class="v">2</div><div class="l">Auto-generated report formats</div></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="pd-nextprev reveal">
+      <a href="genai-task-manager.html"><span class="lbl">Next project</span>GenAI Task Management Assistant →</a>
+      <a href="omniroot-agentic-ai.html"><span class="lbl">Also see</span>OmniRoot Agentic AI →</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Inampudi Durga Vamsi Krishnam Raju</p>
+    <p>built with intent, no framework required</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

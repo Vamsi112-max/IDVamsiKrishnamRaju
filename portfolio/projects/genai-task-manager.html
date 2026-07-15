@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GenAI Task Management Assistant — Vamsi Inampudi</title>
+<meta name="description" content="An AI-powered enterprise platform for task assignment, workflow automation, and approvals, driven by a conversational assistant that understands natural-language requests.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="../index.html" class="brand"><span class="pulse"></span>IV_DVKR</a>
+    <nav class="navlinks">
+      <a href="../index.html#about">about</a>
+      <a href="../index.html#experience">experience</a>
+      <a href="../index.html#projects">projects</a>
+      <a href="../index.html#skills">skills</a>
+      <a href="../index.html#contact">contact</a>
+    </nav>
+    <a class="nav-cta" href="mailto:vamsiinampudi01@gmail.com">Get in touch</a>
+    <button class="nav-toggle" aria-label="Toggle menu">menu</button>
+  </div>
+</header>
+
+<main>
+  <section class="pd-hero">
+    <div class="wrap">
+      <a href="../index.html#projects" class="pd-back reveal">← Back to all projects</a>
+
+      <div class="pd-status-row reveal">
+        <span class="proj-status internal"><span class="led"></span>Internal build</span>
+        <span class="mono" style="font-size:12.5px;color:var(--muted)">Built during AI Developer Internship — Seventh Horse Agri-Tech (MATIC)</span>
+      </div>
+
+      <h1 class="reveal">GenAI-Powered Assistant &amp; Automated Task Management System</h1>
+      <p class="tagline reveal">
+        An AI-powered enterprise task management platform that streamlines company operations through
+        intelligent task assignment, workflow automation, project tracking, approvals, and role-based access —
+        all reachable through a conversational assistant, not just a form.
+      </p>
+
+      <div class="pd-meta-row reveal">
+        <div class="m"><div class="k">Context</div><div class="v">Internship build, Jun–Oct 2025</div></div>
+        <div class="m"><div class="k">Interface</div><div class="v">Conversational assistant + dashboard</div></div>
+        <div class="m"><div class="k">Access control</div><div class="v">Role-based</div></div>
+        <div class="m"><div class="k">Status</div><div class="v">Internal, not publicly deployed</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="pd-body">
+      <div class="pd-main">
+
+        <section class="reveal">
+          <h2><span class="num">01</span> Overview</h2>
+          <p>
+            Built during an AI Developer internship at Seventh Horse Agri-Tech (MATIC), this platform gives
+            teams a way to manage tasks, approvals, and workflows through plain-language requests instead of
+            clicking through a rigid task-tracker UI. Behind a conversational front end sits a full task
+            management backend — assignment logic, workflow rules, approvals, and reporting.
+          </p>
+        </section>
+
+        <section class="reveal">
+          <h2><span class="num">02</span> The problem</h2>
+          <p>
+            Traditional task management tools require every action — assigning work, requesting an approval,
+            checking a project's status — to go through a specific screen built for that exact action. That's
+            fine for power users, but it adds friction for everyone else, and it means the tool can never
+            answer a question it wasn't explicitly built to answer. The goal here was a system that could
+            understand a natural-language request like "reassign this week's overdue tasks to whoever has
+            capacity" and act on it directly.
+          </p>
+        </section>
+
+        <section class="reveal">
+          <h2><span class="num">03</span> Architecture</h2>
+          <div class="arch-list">
+            <div class="arch-item">
+              <span class="n">01</span>
+              <div>
+                <div class="t">Conversational assistant layer</div>
+                <div class="d">An LLM-driven assistant, shaped through prompt engineering, that interprets natural-language requests and maps them to concrete backend actions.</div>
+              </div>
+            </div>
+            <div class="arch-item">
+              <span class="n">02</span>
+              <div>
+                <div class="t">Task &amp; workflow engine</div>
+                <div class="d">Handles assignment logic, workflow automation, and approval routing, exposed to the assistant and the dashboard through a shared REST API.</div>
+              </div>
+            </div>
+            <div class="arch-item">
+              <span class="n">03</span>
+              <div>
+                <div class="t">Role-based access control</div>
+                <div class="d">Every action — viewing, assigning, approving — is scoped to what a given role is actually permitted to do.</div>
+              </div>
+            </div>
+            <div class="arch-item">
+              <span class="n">04</span>
+              <div>
+                <div class="t">Data layer</div>
+                <div class="d">Employee, project, and task data persisted in SQL, queried both by the dashboard and by the assistant when answering a request.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="reveal">
+          <h2><span class="num">04</span> What it handles</h2>
+          <ul>
+            <li>Intelligent, natural-language-driven task assignment</li>
+            <li>Workflow automation and approval management</li>
+            <li>Project tracking with role-based visibility</li>
+            <li>Real-time monitoring of task and project status</li>
+            <li>On-demand report generation from conversational requests</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <aside class="pd-sidebar">
+        <div class="sb-card reveal">
+          <h4>Stack</h4>
+          <div class="sb-tags">
+            <span>Python</span><span>LLM</span><span>Prompt Engineering</span><span>REST API</span><span>SQL</span>
+          </div>
+        </div>
+        <div class="sb-card reveal">
+          <h4>Context</h4>
+          <div class="sb-links">
+            <span style="color:var(--muted)">Built as part of the AI Developer Internship at Seventh Horse Agri-Tech (MATIC), Jun–Oct 2025. Internal enterprise build — not publicly deployed.</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="pd-nextprev reveal">
+      <a href="trackwise-expense-analytics.html"><span class="lbl">Next project</span>TrackWise — Expense Analytics →</a>
+      <a href="atomsphere-nexus.html"><span class="lbl">Also see</span>AtomSphere Nexus →</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Inampudi Durga Vamsi Krishnam Raju</p>
+    <p>built with intent, no framework required</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
